@@ -1,4 +1,4 @@
-# elasticsearch
+# Elasticsearch
 
 # Getting Started
 
