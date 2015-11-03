@@ -1,5 +1,5 @@
 FROM java
-ENV ES_VERSION=1.4.4
+ENV ES_VERSION=2.0.0
 RUN curl -sSL https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-${ES_VERSION}.tar.gz \
   | tar -xzf - -C /opt \
   && mv /opt/elasticsearch-${ES_VERSION} /opt/elasticsearch
