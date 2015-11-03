@@ -1,0 +1,9 @@
+FROM java
+ENV ES_VERSION=1.4.4
+RUN curl -sSL https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-${ES_VERSION}.tar.gz \
+  | tar -xzf - -C /opt \
+  && mv /opt/elasticsearch-${ES_VERSION} /opt/elasticsearch
+EXPOSE 9200
+EXPOSE 9300
+VOLUME /opt/elasticsearch/data
+CMD ["/opt/elasticsearch/bin/elasticsearch"]
