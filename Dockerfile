@@ -1,5 +1,5 @@
 FROM elasticsearch
 
-RUN elasticsearch plugin install \
+RUN plugin install \
       mobz/elasticsearch-head \
       royrusso/elasticsearch-HQ
