@@ -1,3 +1,4 @@
 FROM elasticsearch
 
-RUN bin/elasticsearch-plugin install royrusso/elasticsearch-HQ
+# HQ has not been done yet
+# RUN bin/elasticsearch-plugin install royrusso/elasticsearch-HQ
